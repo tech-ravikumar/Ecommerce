@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/test"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:cardElevation="5dp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_view"
+                android:scaleType="centerCrop"
+                android:foregroundGravity="center"
+                android:layout_marginTop="10dp"
+                android:elevation="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_width="200dp"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:text="Summerwear"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/img_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/offs"
+                android:layout_below="@+id/img_view"
+                android:src="@drawable/baseline_shopping_cart_24"/>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="textStart"
+                android:lines = "1"
+                android:ems  = "7"
+                android:ellipsize="end"
+                android:textSize="12dp"
+                android:text="HRX By Hrithik Roshan HRX By Hrithik Roshan "
+                android:layout_below="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt3"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:text="3,999"
+                android:drawableStart="@drawable/cutrupee"
+                android:background="@drawable/cutprice"
+                android:layout_below="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt4"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="1,399"
+                android:drawableStart="@drawable/baseline_currency_rupee_24"
+                android:layout_toRightOf="@+id/txt3"
+                android:layout_below="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/offs"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:textSize="12dp"
+                android:textColor="#5FBF61"
+                android:textStyle="bold"
+                android:text="65% OFF"
+                android:layout_toRightOf="@+id/txt4"
+                android:layout_below="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <FrameLayout
+                android:layout_width="20dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/txt4"/>
+
+            <TextView
+                android:id="@+id/cid"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:textSize="0dp"></TextView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

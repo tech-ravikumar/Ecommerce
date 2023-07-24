@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    tools:context=".ProductEditAct">
+
+
+        <EditText
+            android:id="@+id/e_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            />
+
+
+
+
+        <EditText
+            android:id="@+id/etxt2"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_title"
+            android:hint="Subtitle"
+            android:textAlignment="textStart"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etxt3"
+            android:hint="Total Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+        />
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etxt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Discount Price"
+            android:textSize="20dp"
+           />
+
+
+        <EditText
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/eoffs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Discount"
+            android:textSize="20dp"
+             />
+
+    <TextView
+        android:id="@+id/ecid"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="0dp"/>
+
+
+
+   <Button
+       android:id="@+id/esubmit"
+       android:layout_width="match_parent"
+       android:padding="10dp"
+       android:layout_marginTop="20dp"
+       android:text="submit"
+       android:layout_height="wrap_content"/>
+
+</LinearLayout>
